@@ -1,0 +1,255 @@
+INFO [2021-05-12 20:31:48] [phosphomycin]  Session started!
+INFO [2021-05-12 20:31:48] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+INFO [2021-05-12 20:31:49] [phosphomycin]  - Internet Connection Status: ok
+INFO [2021-05-12 20:31:49] [phosphomycin]  - Current IP is "185.70.55.76" and it's from "Georgia/GE"
+INFO [2021-05-12 20:31:49] [phosphomycin]  -- Connection Checklist [2/2] (Hide Selenium Extension)
+INFO [2021-05-12 20:31:49] [phosphomycin]  - window.navigator.webdriver response: True
+WARNING [2021-05-12 20:31:49] [phosphomycin]  - Hide Selenium Extension: error
+INFO [2021-05-12 20:31:54] [phosphomycin]  - Cookie file not found, creating cookie...
+INFO [2021-05-12 20:32:31] [phosphomycin]  Logged in successfully!
+INFO [2021-05-12 20:32:31] [phosphomycin]  Saving account progress...
+INFO [2021-05-12 20:32:49] [phosphomycin]  Tag [1/1]
+INFO [2021-05-12 20:32:49] [phosphomycin]  --> b'natgeo'
+INFO [2021-05-12 20:33:00] [phosphomycin]  desired amount: 19  |  top posts [disabled]: 9  |  possible posts: 22945651
+INFO [2021-05-12 20:33:28] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5tWjglKw/
+INFO [2021-05-12 20:33:53] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5rxmju-e/
+INFO [2021-05-12 20:34:05] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:05] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:06] [phosphomycin]  Cannot detect post media type. Skip https://www.instagram.com/p/COx5m51s05b/
+INFO [2021-05-12 20:34:12] [phosphomycin]  Like# [1/12]
+INFO [2021-05-12 20:34:12] [phosphomycin]  https://www.instagram.com/p/COx5y2mJYP0/
+ERROR [2021-05-12 20:34:12] [phosphomycin]  Error occurred while deleting cookies from web browser!
+	b'Message: Tried to run command without establishing a connection\n'
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\instapy\util.py", line 1920, in smart_run
+    yield
+  File "c:\Users\HP\Documents\repos\Instagram\quickstart.py", line 22, in <module>
+    session.like_by_tags(["natgeo"], amount=10)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\instapy\instapy.py", line 1957, in like_by_tags
+    inappropriate, user_name, is_video, reason, scope = check_link(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\instapy\like_util.py", line 568, in check_link
+    web_address_navigator(browser, post_link)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\instapy\util.py", line 1250, in web_address_navigator
+    browser.get(link)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\instapy\browser.py", line 189, in close_browser
+    browser.delete_all_cookies()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 878, in delete_all_cookies
+    self.execute(Command.DELETE_ALL_COOKIES)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection
+
+INFO [2021-05-12 20:34:12] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+On session start was FOLLOWING 95 users & had 67 FOLLOWERS
+[Session lasted 2.51 minutes]
+INFO [2021-05-12 20:34:12] [phosphomycin]  Session ended!
+INFO [2021-05-12 20:34:28] [phosphomycin]  Session started!
+INFO [2021-05-12 20:35:20] [phosphomycin]  Session started!
+INFO [2021-05-12 20:35:20] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+INFO [2021-05-12 20:35:21] [phosphomycin]  - Internet Connection Status: ok
+INFO [2021-05-12 20:35:21] [phosphomycin]  - Current IP is "185.70.52.61" and it's from "Georgia/GE"
+INFO [2021-05-12 20:35:21] [phosphomycin]  -- Connection Checklist [2/2] (Hide Selenium Extension)
+INFO [2021-05-12 20:35:21] [phosphomycin]  - window.navigator.webdriver response: True
+WARNING [2021-05-12 20:35:21] [phosphomycin]  - Hide Selenium Extension: error
+INFO [2021-05-12 20:35:24] [phosphomycin]  - Cookie file for user 'phosphomycin' loaded...
+WARNING [2021-05-12 20:35:27] [phosphomycin]  - Issue with cookie for user 'phosphomycin'. Creating new cookie...
+INFO [2021-05-12 20:35:27] [phosphomycin]  - Deleting browser cookies...
+INFO [2021-05-12 20:35:49] [phosphomycin]  - Do not save Login Info by now...
+INFO [2021-05-12 20:36:03] [phosphomycin]  Logged in successfully!
+INFO [2021-05-12 20:36:03] [phosphomycin]  Saving account progress...
+INFO [2021-05-12 20:36:16] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+On session start was FOLLOWING 95 users & had 67 FOLLOWERS
+[Session lasted 1.05 minutes]
+INFO [2021-05-12 20:36:16] [phosphomycin]  Session ended!
+INFO [2021-05-12 20:38:51] [phosphomycin]  Session started!
+INFO [2021-05-12 20:38:51] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+INFO [2021-05-12 20:38:52] [phosphomycin]  - Internet Connection Status: ok
+INFO [2021-05-12 20:38:52] [phosphomycin]  - Current IP is "185.70.52.61" and it's from "Georgia/GE"
+INFO [2021-05-12 20:38:52] [phosphomycin]  -- Connection Checklist [2/2] (Hide Selenium Extension)
+INFO [2021-05-12 20:38:52] [phosphomycin]  - window.navigator.webdriver response: True
+WARNING [2021-05-12 20:38:52] [phosphomycin]  - Hide Selenium Extension: error
+INFO [2021-05-12 20:38:57] [phosphomycin]  - Cookie file for user 'phosphomycin' loaded...
+INFO [2021-05-12 20:39:16] [phosphomycin]  Logged in successfully!
+INFO [2021-05-12 20:39:16] [phosphomycin]  Saving account progress...
+INFO [2021-05-12 20:39:31] [phosphomycin]  Starting to get the `Followers` data..
+INFO [2021-05-12 20:39:31] [phosphomycin]  Retrieving live `Followers` data of t0dss at "full" range
+INFO [2021-05-12 20:40:22] [phosphomycin]  Grabbed 325 usernames from `Followers` in 18.7 seconds
+INFO [2021-05-12 20:40:22] [phosphomycin]  Stored `Followers` data at C:\Users\HP\Documents\repos\Instagram\InstaPy\logs\phosphomycin\/relationship_data/t0dss/followers/12-05-2021~full~325.json local file
+INFO [2021-05-12 20:40:22] [phosphomycin]  Zz :[ time to take a good nap  ~sleeping 42.0 seconds
+INFO [2021-05-12 20:41:05] [phosphomycin]  Yawn :] let's go!
+
+INFO [2021-05-12 20:41:06] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+On session start was FOLLOWING 95 users & had 67 FOLLOWERS
+[Session lasted 2.38 minutes]
+INFO [2021-05-12 20:41:06] [phosphomycin]  Session ended!
+INFO [2021-05-12 20:49:13] [phosphomycin]  Session started!
+INFO [2021-05-12 20:49:13] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+WARNING [2021-05-12 20:49:14] [phosphomycin]  - Internet Connection Status: error
+CRITICAL [2021-05-12 20:49:14] [phosphomycin]  Unable to login to Instagram! You will find more information in the logs above.
+INFO [2021-05-12 20:49:14] [phosphomycin]  Starting to get the `Followers` data..
+INFO [2021-05-12 20:49:14] [phosphomycin]  Retrieving live `Followers` data of t0dss at "full" range
+INFO [2021-05-12 20:49:15] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+
+[Session lasted 8.32 seconds]
+INFO [2021-05-12 20:49:15] [phosphomycin]  Session ended!
+INFO [2021-05-12 20:49:43] [phosphomycin]  Session started!
+INFO [2021-05-12 20:49:43] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+INFO [2021-05-12 20:49:44] [phosphomycin]  - Internet Connection Status: ok
+INFO [2021-05-12 20:49:44] [phosphomycin]  - Current IP is "185.70.52.225" and it's from "Georgia/GE"
+INFO [2021-05-12 20:49:44] [phosphomycin]  -- Connection Checklist [2/2] (Hide Selenium Extension)
+INFO [2021-05-12 20:49:44] [phosphomycin]  - window.navigator.webdriver response: True
+WARNING [2021-05-12 20:49:44] [phosphomycin]  - Hide Selenium Extension: error
+INFO [2021-05-12 20:49:48] [phosphomycin]  - Cookie file for user 'phosphomycin' loaded...
+WARNING [2021-05-12 20:49:50] [phosphomycin]  - Issue with cookie for user 'phosphomycin'. Creating new cookie...
+INFO [2021-05-12 20:49:50] [phosphomycin]  - Deleting browser cookies...
+INFO [2021-05-12 20:50:16] [phosphomycin]  - Do not save Login Info by now...
+INFO [2021-05-12 20:50:35] [phosphomycin]  Logged in successfully!
+INFO [2021-05-12 20:50:35] [phosphomycin]  Saving account progress...
+INFO [2021-05-12 20:50:48] [phosphomycin]  Starting to get the `Followers` data..
+INFO [2021-05-12 20:50:48] [phosphomycin]  Retrieving live `Followers` data of t0dss at "full" range
+INFO [2021-05-12 20:51:37] [phosphomycin]  Grabbed 325 usernames from `Followers` in 16.74 seconds
+INFO [2021-05-12 20:51:37] [phosphomycin]  Stored `Followers` data at C:\Users\HP\Documents\repos\Instagram\InstaPy\logs\phosphomycin\/relationship_data/t0dss/followers/12-05-2021~full~325(1).json local file
+INFO [2021-05-12 20:51:37] [phosphomycin]  Zz :[ time to take a good nap  ~sleeping 42.0 seconds
+INFO [2021-05-12 20:52:01] [phosphomycin]  Yawn :] let's go!
+
+INFO [2021-05-12 20:52:02] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+On session start was FOLLOWING 95 users & had 67 FOLLOWERS
+[Session lasted 2.41 minutes]
+INFO [2021-05-12 20:52:02] [phosphomycin]  Session ended!
+INFO [2021-05-22 22:53:46] [phosphomycin]  Session started!
+INFO [2021-05-22 22:53:46] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+INFO [2021-05-22 22:53:47] [phosphomycin]  - Internet Connection Status: ok
+INFO [2021-05-22 22:53:47] [phosphomycin]  - Current IP is "185.70.55.29" and it's from "Georgia/GE"
+INFO [2021-05-22 22:53:47] [phosphomycin]  -- Connection Checklist [2/2] (Hide Selenium Extension)
+INFO [2021-05-22 22:53:47] [phosphomycin]  - window.navigator.webdriver response: True
+WARNING [2021-05-22 22:53:47] [phosphomycin]  - Hide Selenium Extension: error
+INFO [2021-05-22 22:53:52] [phosphomycin]  - Cookie file for user 'phosphomycin' loaded...
+INFO [2021-05-22 22:54:11] [phosphomycin]  Logged in successfully!
+INFO [2021-05-22 22:54:11] [phosphomycin]  Saving account progress...
+WARNING [2021-05-22 22:54:22] [phosphomycin]  Unable to save account progress, skipping data update 
+	b'Message: TypeError: browsingContextFn().currentWindowGlobal is null\n'
+ERROR [2021-05-22 22:54:22] [phosphomycin]  Error occurred while deleting cookies from web browser!
+	b'Message: Browsing context has been discarded\n'
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\util.py", line 1919, in smart_run
+    session.login()
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\instapy.py", line 470, in login
+    self.followed_by = log_follower_num(self.browser, self.username, self.logfolder)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\print_log_writer.py", line 23, in log_follower_num
+    web_address_navigator(browser, user_link)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\util.py", line 1250, in web_address_navigator
+    browser.get(link)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Browsing context has been discarded
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\browser.py", line 189, in close_browser
+    browser.delete_all_cookies()
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 878, in delete_all_cookies
+    self.execute(Command.DELETE_ALL_COOKIES)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Browsing context has been discarded
+
+INFO [2021-05-22 22:54:23] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+
+[Session lasted 45.3 seconds]
+INFO [2021-05-22 22:54:23] [phosphomycin]  Session ended!
+INFO [2021-05-22 22:55:36] [phosphomycin]  Custom workspace set: "C:/Users/HP/Documents/repos/Instagram/InstaPy" :]
+INFO [2021-05-22 22:55:36] [phosphomycin]  Workspace in use: "C:/Users/HP/Documents/repos/Instagram/InstaPy"
+INFO [2021-05-22 22:55:42] [phosphomycin]  Session started!
+INFO [2021-05-22 22:55:42] [phosphomycin]  -- Connection Checklist [1/2] (Internet Connection Status)
+INFO [2021-05-22 22:55:47] [phosphomycin]  - Internet Connection Status: ok
+INFO [2021-05-22 22:55:47] [phosphomycin]  - Current IP is "185.70.55.29" and it's from "Georgia/GE"
+INFO [2021-05-22 22:55:47] [phosphomycin]  -- Connection Checklist [2/2] (Hide Selenium Extension)
+INFO [2021-05-22 22:55:47] [phosphomycin]  - window.navigator.webdriver response: True
+WARNING [2021-05-22 22:55:47] [phosphomycin]  - Hide Selenium Extension: error
+INFO [2021-05-22 22:55:51] [phosphomycin]  - Cookie file for user 'phosphomycin' loaded...
+INFO [2021-05-22 22:56:09] [phosphomycin]  Logged in successfully!
+INFO [2021-05-22 22:56:09] [phosphomycin]  Saving account progress...
+WARNING [2021-05-22 22:56:20] [phosphomycin]  Unable to save account progress, skipping data update 
+	b'Message: TypeError: browsingContextFn().currentWindowGlobal is null\n'
+ERROR [2021-05-22 22:56:21] [phosphomycin]  Error occurred while deleting cookies from web browser!
+	b'Message: Failed to decode response from marionette\n'
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\util.py", line 1919, in smart_run
+    session.login()
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\instapy.py", line 470, in login
+    self.followed_by = log_follower_num(self.browser, self.username, self.logfolder)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\print_log_writer.py", line 23, in log_follower_num
+    web_address_navigator(browser, user_link)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\util.py", line 1250, in web_address_navigator
+    browser.get(link)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Browsing context has been discarded
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\instapy\browser.py", line 189, in close_browser
+    browser.delete_all_cookies()
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 878, in delete_all_cookies
+    self.execute(Command.DELETE_ALL_COOKIES)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\HP\Documents\WPy64-3920\python-3.9.2.amd64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
+
+INFO [2021-05-22 22:56:21] [phosphomycin]  Sessional Live Report:
+	|> No any statistics to show
+
+
+[Session lasted 45.07 seconds]
+INFO [2021-05-22 22:56:21] [phosphomycin]  Session ended!
+INFO [2021-05-22 22:56:39] [phosphomycin]  Custom workspace set: "C:/Users/HP/Documents/repos/Instagram/InstaPy" :]
+INFO [2021-05-22 22:56:39] [phosphomycin]  Workspace in use: "C:/Users/HP/Documents/repos/Instagram/InstaPy"
